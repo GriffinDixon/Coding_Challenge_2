@@ -16,3 +16,26 @@ let billValue = 100
 let tipQuantity = calculateTip (billValue);
 let totalValue = billValue + tipQuantity;
 console.log(`For a bill of $${billValue}, the tip is $${tipQuantity}, and the total amount is $${totalValue}`);
+
+// Task 4 Utilizing Arrays
+// Data Set 1
+const bills1 = [275, 40, 430];
+const tips1 = bills1.map(calculateTip);
+const totals1 = bills1.map((bill, index) => bill + tips1[index]);
+
+console.log("Data Set1:",{
+    Bills: bills1,
+    Tips: tips1,
+    Totals: totals1
+});
+
+// Test Data Set 2
+const bills2 = [125, 555, 44];
+const tips2 = bills2.map(calculateTip);
+const totals2 = bills2.map((bill, index) => bill + tips1[index]);
+
+console.log("Data Set1:",{
+    Bills: bills2,
+    Tips: tips2,
+    Totals: totals2
+});
