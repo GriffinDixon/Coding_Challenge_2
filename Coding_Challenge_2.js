@@ -34,7 +34,7 @@ const bills2 = [125, 555, 44];
 const tips2 = bills2.map(calculateTip);
 const totals2 = bills2.map((bill, index) => bill + tips1[index]);
 
-console.log("Data Set1:",{
+console.log("Data Set2:",{
     Bills: bills2,
     Tips: tips2,
     Totals: totals2
